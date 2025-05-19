@@ -1,0 +1,122 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #e6f7fa; /* Light blue background for calmness */
+  margin: 0;
+  padding: 0;
+}
+
+/* Simple site header styling */
+.site-header {
+  background-color: #00bcd4; /* Teal, matching the palette */
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 16px 0;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 0;
+}
+.site-header h2 {
+  font-size: 2em;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Style the CTA banner with a background image and a light overlay */
+.cta-banner {
+  position: relative; /* Needed for overlay */
+  background: url('img/cta-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 100px 20px; /* Tall banner with space */
+  border-radius: 0 0 30px 30px; /* Soft, inviting corners at the bottom */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Overlay for the banner to keep text readable */
+.cta-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 128, 160, 0.45); /* Light blue-teal overlay */
+  z-index: 0;
+}
+
+.cta-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Main heading: large and bold */
+.cta-banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Description: slightly smaller, easy to read */
+.cta-description {
+  font-size: 1.2em;
+  margin-bottom: 35px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA button: bright, eye-catching, and inviting */
+.cta-button {
+  display: inline-block;
+  background-color: #00bcd4; /* Bright teal */
+  color: #fff;
+  padding: 18px 40px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+}
+
+/* Button hover effect for interactivity */
+.cta-button:hover {
+  background-color: #007c91; /* Deeper blue-teal on hover */
+}
+
+/* Info section below the banner: two columns, centered */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  background: #f4fcfd; /* Very light blue for contrast */
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: table; /* Simple two-column layout for beginners */
+  width: 100%;
+  overflow: hidden;
+}
+.info-image, .info-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding: 24px 18px;
+}
+.info-image img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+.info-text h3 {
+  color: #00bcd4;
+  font-size: 1.5em;
+  margin-top: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.info-text p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 0;
+}
